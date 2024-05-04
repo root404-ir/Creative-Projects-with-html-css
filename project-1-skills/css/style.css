@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container marquee {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+@keyframes border_rgb {
+    10% {
+        border-color: #ff0000;
+    }
+
+    30% {
+        border-color: #00ffaa;
+    }
+
+    40% {
+        border-color: #ff00b3;
+    }
+
+    50% {
+        border-color: #5f9ea0;
+    }
+
+    60% {
+        border-color: #ee82ee;
+    }
+
+    70% {
+        border-color: #ff6347;
+    }
+
+    80% {
+        border-color: #9400d3;
+    }
+
+    90% {
+        border-color: #ff8c00;
+    }
+
+    100% {
+        border-color: #b8860b;
+    }
+}
+
+.skil_box {
+    margin: 20px 0;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 500px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    border: 10px outset;
+    animation: border_rgb 15s infinite;
+    height: 400px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #4070f4;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 212, 255, .3);
+}
+.skil_title {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+
+.skil_bar {
+    width: 100%;
+    height: 8px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skil_progress {
+    background-color: #4070f4;
+    height: 100%;
+    border-radius: 7px;
+    opacity: 0;
+    animation: skill_progress_load 1s ease-in-out forwards;
+}
+
+@keyframes skill_progress_load {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skil_bar .html {
+    width: 80%;
+}
+
+.skil_bar .css {
+    width: 75%;
+}
+
+.skil_bar .bootstrap {
+    width: 70%;
+}
+
+.skil_bar .Javascript {
+    width: 30%;
+}
+.skil_bar .react {
+    width: 20%;
+}
+.skil_bar .linux {
+    width: 50%;
+}
+.skil_bar .git {
+    width: 40%;
+}
+
+
+
+.tooltip {
+    position: absolute;
+    top: -35px;
+    font-size: 14px;
+    background-color: #4070f4;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 7px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: "";
+    background-color: #4070f4;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(46deg);
+    z-index: -1;
+}
+
+.html-tool {
+    right: 70px;
+}
+
+.css-tool {
+    right: 92px;
+}
+
+.bootstrap-tool {
+    right: 115px;
+}
+
+.javascript-tool {
+    right: 282px;
+}
+.git-tool {
+    right: 240px;
+}
+.react-tool {
+    right: 325px;
+}
+.linux-tool {
+    right: 200px;
+}
+
+.copyright {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.copyright a:hover {
+    background-color: #fff;
+    color: #4070f4;
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+
+.copyright:hover::before {
+    content: "⇒";
+}
+
+.copyright:hover::after {
+    content: "⇐";
+    margin-left: 5px;
+}
