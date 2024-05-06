@@ -44,6 +44,41 @@
     .section_nev {
         grid-template-columns: 3% 78% 2%;
     }
+
+    .img_box {
+
+        min-width: 25px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .group_icon {
+        gap: 0.5rem;
+    }
+
+    .user_connection_ststus {
+        width: 47px;
+        font-size: 12px;
+    }
+
+    .user_avatar {
+        width: 34px;
+        height: 34px;
+    }
+
+    .img_box {
+        min-width: 20px;
+    }
+
+    .section_logo h3 {
+        font-size: .5rem;
+    }
+
+    .user_connection_ststus {
+        width: 35px;
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width:768px) {
