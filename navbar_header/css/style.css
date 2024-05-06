@@ -144,9 +144,10 @@ a {
     top: 0;
     width: 200px;
     transform: translateX(-350px);
-    transition: all 0.5s ease-in-out;
+    transition: all 250ms ease-in-out;
     padding: 2rem 0 2rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    overflow-x: hidden;
 }

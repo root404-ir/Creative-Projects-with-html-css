@@ -40,6 +40,7 @@
     .center_nav {
         display: none;
     }
+
     .section_nev {
         grid-template-columns: 3% 78% 2%;
     }
@@ -47,8 +48,7 @@
 
 @media screen and (min-width:768px) {
 
-    .toggle_list_nav_mobile,
-    .label_toggle_nav {
+    .nav_mobile {
         display: none;
     }
 
