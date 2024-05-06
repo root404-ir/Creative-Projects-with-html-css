@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="section_nev d-flex">
+        <div class="section_nev">
             <div class="left_nav d-flex align-items-center">
                 <div class="section_logo d-flex align-items-center">
                     <div class="img_box">
@@ -21,7 +22,7 @@
             </div>
             <div class="center_nav">
                 <ul class="d-flex align-items-center">
-                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" class="active">Dashboard</a></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Message</a></li>
                     <li><a href="#">About us</a></li>
@@ -60,6 +61,21 @@
                         <img src="img/team4.png" alt="">
                     </div>
                 </div>
+            </div>
+            <div class="nav_mobile">
+                <input type="checkbox" id="toggle_nav" hidden>
+                <label for="toggle_nav" class="label_toggle_nav">
+                    <span class="line line_top"></span>
+                    <span class="line line_middle"></span>
+                    <span class="line line_bottom"></span>
+                </label>
+                <ul class="toggle_list_nav_mobile">
+                    <li><a href="#" class="active">Dashboard</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Message</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
             </div>
         </div>
     </div>

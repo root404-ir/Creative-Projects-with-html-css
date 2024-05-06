@@ -34,14 +34,15 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
 .section_nev {
+    display: grid;
+    grid-template-columns: 10% 48% 26%;
     width: 100%;
     background-color: #fff;
-    height: 100px;
     border-radius: 10px;
     margin-top: 20px;
     box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
@@ -53,12 +54,12 @@ a {
     height: 100%;
 }
 
-.img_box {
-    min-width: 50px;
+.right_nav {
+    justify-content: end;
 }
 
-.center_nav {
-    width: 50%;
+.img_box {
+    min-width: 50px;
 }
 
 .center_nav ul {
@@ -67,22 +68,85 @@ a {
 }
 
 .user_avatar {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
-.user_avatar img
-{
+
+.user_avatar img {
     border-radius: 100%;
 }
-.user_section,.right_nav
-{
+
+.user_section {
     gap: 1rem;
 }
-.group_icon
-{
+
+.group_icon {
     gap: 2rem;
+    margin-right: 2rem;
 }
-.right_nav
-{
-    width: 23%;
+
+.user_connection_ststus {
+    width: 65px;
+    background-color: #edfdfa;
+    color: #1f927f;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.active {
+    background-image: linear-gradient(-30deg, #3ac2ff 50%, #2f56ff);
+    color: #fff;
+    padding: 10px;
+    border-radius: 22px;
+    font-weight: bold;
+}
+
+#toggle_nav:checked+label+ul {
+    transform: translateX(0);
+}
+
+#toggle_nav:checked+label span:first-child {
+    transform: rotate(127deg);
+    position: relative;
+    top: -4px;
+}
+
+#toggle_nav:checked+label .line_middle {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+#toggle_nav:checked+label span:last-child {
+    transform: rotate(58deg);
+    position: relative;
+    top: -12px;
+}
+
+.line {
+    border-bottom: 1px solid;
+    width: 14px;
+    display: block;
+    margin-bottom: 3px;
+    transition: all 250ms ease-in-out;
+}
+
+.label_toggle_nav {
+    position: relative;
+    top: 19px;
+}
+
+.toggle_list_nav_mobile {
+    position: fixed;
+    left: 0;
+    background-color: #fff;
+    height: 100%;
+    top: 0;
+    width: 200px;
+    transform: translateX(-350px);
+    transition: all 0.5s ease-in-out;
+    padding: 2rem 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }

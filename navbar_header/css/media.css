@@ -1,4 +1,55 @@
-@media screen and (max-width:999px)
-{
-    
+@media screen and (max-width:999px) {
+    .img_box {
+        min-width: 35px;
+    }
+
+    .section_logo h3 {
+        font-size: .9rem;
+    }
+
+    .center_nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    .active {
+        padding: 6px;
+    }
+
+    .group_icon a svg {
+        width: 14px;
+        vertical-align: middle;
+    }
+
+    .user_connection_ststus {
+        width: 57px;
+        padding: .2rem;
+        font-size: 14px;
+    }
+
+    .user_avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .section_nev {
+        grid-template-columns: 3% 42% 24%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .center_nav {
+        display: none;
+    }
+    .section_nev {
+        grid-template-columns: 3% 78% 2%;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .toggle_list_nav_mobile,
+    .label_toggle_nav {
+        display: none;
+    }
+
 }
