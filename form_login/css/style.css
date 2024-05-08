@@ -16,6 +16,13 @@ body {
     background-size: cover;
 }
 
+svg {
+    position: absolute;
+    top: 27px;
+    right: 10px;
+    fill: #fff;
+}
+
 .circle {
     width: 1000px;
     height: 1000px;
@@ -131,25 +138,23 @@ body {
 .username {
     position: absolute;
     cursor: text;
-    top: 32px;
+    top: 3px;
     left: 23px;
     font-size: 12px;
     font-weight: bold;
     padding: 0 10px;
     transition: all 0.5s ease-in-out;
-    z-index: -1000;
 }
 
 .password {
     position: absolute;
     cursor: text;
-    top: 32px;
-    left: 23px;
+    top: 3px;
+    left: 13px;
     font-size: 12px;
     font-weight: bold;
     transition: all 0.5s ease-in-out;
     padding: 0 10px;
-    z-index: -10000;
 }
 
 input:active+label,
@@ -162,13 +167,24 @@ input:active,
 input:focus {
     outline: 0;
 }
-@media screen and (max-width:768px)
+input[type="password"]:valid
 {
+    border-color: rgb(66, 248, 66);
+}
+input[type="password"]:invalid
+{
+    border-color: rgb(255, 0, 0);
+}
+.star
+{
+    color: red;
+}
+@media screen and (max-width:768px) {
     .login_img {
         display: none !important;
     }
-    .login_page form
-    {
+
+    .login_page form {
         width: 100%;
     }
 }
