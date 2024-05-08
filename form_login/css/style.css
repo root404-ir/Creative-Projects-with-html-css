@@ -11,18 +11,21 @@ body {
     align-items: center;
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('../img/wp7752897-neon-room-wallpapers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .circle {
     width: 1000px;
     height: 1000px;
     position: fixed;
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+    /* background: radial-gradient(circle, rgba(184, 63, 251, 1) 0%, rgba(252, 70, 107, 1) 100%); */
     z-index: -1;
     border-radius: 100%;
-    left: -9rem;
+    left: -4rem;
     top: 40%;
-    transform: translateY(-10%);
+    transform: translateY(-20%);
 }
 
 .login_page {
@@ -34,7 +37,6 @@ body {
     align-items: center;
     border-radius: 20px;
     border: 5px solid #fff;
-
 }
 
 .login_page form {
@@ -44,8 +46,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    -webkit-backdrop-filter: blur(22px);
-    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(90px);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
 }
 
 .login_page form h1 {
@@ -65,32 +68,15 @@ body {
     flex-direction: column;
     margin-bottom: 0.5rem;
     width: 50%;
-
+    position: relative;
+    border-radius: 20px;
 }
 
 .form_group label {
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     font-weight: bold;
     color: #fff;
 }
-
-.username {
-    position: absolute;
-    top: 119px;
-    left: 200px;
-    background: transparent;
-    backdrop-filter: blur(5px);
-    z-index: 1000;
-}
-
-.password {
-    position: absolute;
-    top: 210px;
-    left: 200px;
-    backdrop-filter: blur(20px);
-    z-index: 1000;
-}
-
 
 .form_group input {
     color: #fff;
@@ -99,7 +85,7 @@ body {
     background-color: transparent;
     height: 40px;
     border-radius: 20px;
-    position: relative;
+    /* position: relative; */
     margin: 20px 0;
     padding: 0 19px;
     transition: all 0.5s ease-in-out;
@@ -139,14 +125,50 @@ body {
 
 .login_img img {
     object-fit: cover;
+    width: 100%;
+}
+
+.username {
+    position: absolute;
+    cursor: text;
+    top: 32px;
+    left: 23px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 10px;
+    transition: all 0.5s ease-in-out;
+    z-index: -1000;
+}
+
+.password {
+    position: absolute;
+    cursor: text;
+    top: 32px;
+    left: 23px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    padding: 0 10px;
+    z-index: -10000;
+}
+
+input:active+label,
+input:focus+label {
+    top: 0px;
+    background: transparent;
 }
 
 input:active,
-input:focus,
-.username:active,
-.username:focus,
-.password:active,
-.password:focus {
+input:focus {
     outline: 0;
-    transform: translateY(15px);
+}
+@media screen and (max-width:768px)
+{
+    .login_img {
+        display: none !important;
+    }
+    .login_page form
+    {
+        width: 100%;
+    }
 }
