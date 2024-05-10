@@ -11,7 +11,9 @@ body {
     align-items: center;
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url('../img/wp7752897-neon-room-wallpapers.jpg');
+    /* background-image: url('../img/wp7752897-neon-room-wallpapers.jpg'); */
+    /* background-image: url('https://images.hdqwalls.com/wallpapers/samsung-galaxy-s9-zk.jpg'); */
+    background-image: url('../img/parallel-planet-existence-p1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

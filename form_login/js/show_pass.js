@@ -1,15 +1,15 @@
-let input_element = document.getElementById("pass")
-let show_password = document.getElementById("Layer_1")
-let hide_password = document.getElementById("Layer_2")
+let input_element = document.getElementById('pass')
+let show_icon = document.getElementById('Layer_1')
+let hide_icon = document.getElementById('Layer_2')
 
-function togglePass() {
+function passwordToggle() {
     if (input_element.type === "password") {
         input_element.type = 'text'
-        show_password.style.display = 'inline'
-        hide_password.style.display = 'none'
+        show_icon.style.display = 'inline'
+        hide_icon.style.display = 'none'
     } else {
         input_element.type = 'password'
-        show_password.style.display = 'none'
-        hide_password.style.display = 'inline'
+        show_icon.style.display = 'none'
+        hide_icon.style.display = 'inline'
     }
 }
